@@ -1,65 +1,53 @@
-import Image from "next/image";
+import React from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import WhyJoin from "@/components/WhyJoin";
+import Topics from "@/components/Topics";
+import HowItWorks from "@/components/HowItWorks";
+import Footer from "@/components/Footer";
+import ApplyModal from "@/components/modals/ApplyModal";
+import AuthModal from "@/components/modals/AuthModal";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="relative min-h-screen flex flex-col bg-[var(--bg)] text-[var(--text)] selection:bg-[var(--primary)]/30 selection:text-[var(--text)] overflow-x-hidden public-page">
+      {/* Locked Background Glows to Prevent Empty Bottom Gap and Layout Bleeds */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-[var(--primary)]/8 rounded-full blur-[150px] animate-pulse-slow" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[45vw] h-[45vw] bg-[var(--primary-hover)]/10 rounded-full blur-[140px]" />
+      </div>
+
+      {/* Sticky Premium Navigation */}
+      <Navbar />
+
+      {/* Main Page Layout */}
+      <main className="flex flex-col flex-1 relative z-10">
+        <Hero />
+        
+        {/* Subtle Horizontal Gradient Divider */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
+        
+        <WhyJoin />
+        
+        {/* Subtle Horizontal Gradient Divider */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
+        
+        <Topics />
+        
+        {/* Subtle Horizontal Gradient Divider */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
+        
+        <HowItWorks />
       </main>
+
+      {/* Premium Multi-Column Footer */}
+      <Footer />
+
+      {/* Founding Membership Onboarding Modal */}
+      <ApplyModal />
+
+      {/* Campus Authentication Modal (Login/Signup/Forgot) */}
+      <AuthModal />
     </div>
   );
 }
