@@ -130,8 +130,4 @@ npm run dev
 
 ---
 
-## ❤️ Built For Students
-
-Made with ❤️ by students, for students.
-
 **CampusCircle — Connect • Collaborate • Grow 🌍**
