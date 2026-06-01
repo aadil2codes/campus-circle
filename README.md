@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 CampusCircle
 
-## Getting Started
+> 🌍 Connecting Students Beyond Campus
 
-First, run the development server:
+CampusCircle is a student networking platform designed to help college students connect, collaborate, and grow with peers from different institutions across India.
+
+Whether you're looking for 🤝 project teammates, 🚀 hackathon partners, 💼 placement guidance, 📚 study resources, or 🎯 career opportunities, CampusCircle brings everything together in one place.
+
+---
+
+## ✨ Features
+
+### 🏘️ Communities
+- Join communities created by students
+- Discover trending discussions
+- Explore communities across colleges
+- Create your own community after eligibility unlocks
+
+### 📰 Social Feed
+- Browse posts from different communities
+- ❤️ Like posts
+- 💬 Comment on discussions
+- 🔖 Save useful content
+- 🔄 Share posts with others
+
+### 🤝 Student Networking
+- Connect with students across India
+- Build meaningful academic and professional relationships
+- Discover students with similar interests
+
+### 💬 Messaging
+- Direct student-to-student messaging
+- Real-time conversations
+- Private communication
+
+### 👤 Profiles
+- Personalized student profiles
+- College, branch, and academic details
+- Skills and interests showcase
+- Profile customization
+
+### 🛡️ Security & Ownership
+- Secure authentication
+- Protected user data
+- Users can only edit their own content
+- Permission-based actions
+
+---
+
+## 🚀 Tech Stack
+
+### 🎨 Frontend
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+
+### ⚙️ Backend
+- Supabase
+
+### 🗄️ Database
+- PostgreSQL
+
+### 🔐 Authentication
+- Supabase Auth
+
+### 🖼️ Storage
+- Supabase Storage
+
+### 🌐 Deployment
+- Vercel
+
+---
+
+## 🎯 Vision
+
+CampusCircle is built to become a nationwide student network where students can:
+
+- 🚀 Build hackathon teams
+- 💻 Collaborate on projects
+- 📚 Share study resources
+- 💼 Discover internships
+- 🎯 Prepare for placements
+- 🧠 Learn from peers
+- 🌍 Connect beyond their own campus
+
+The goal is simple:
+
+> **Break college boundaries and help students grow together.**
+
+---
+
+## 🛠️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/aadil2codes/campus-circle.git
+```
+
+Move into the project:
+
+```bash
+cd campus-circle
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌟 Future Plans
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 📱 Mobile App
+- 🤖 AI-Powered Recommendations
+- 🎤 Student Events
+- 🎓 Alumni Mentorship
+- 💼 Internship Marketplace
+- 🏆 Hackathon Hub
+- 📊 Community Analytics
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ❤️ Built For Students
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Made with ❤️ by students, for students.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**CampusCircle — Connect • Collaborate • Grow 🌍**
