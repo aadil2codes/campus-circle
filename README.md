@@ -6,6 +6,7 @@ CampusCircle is a student networking platform designed to help college students 
 
 Whether you're looking for 🤝 project teammates, 🚀 hackathon partners, 💼 placement guidance, 📚 study resources, or 🎯 career opportunities, CampusCircle brings everything together in one place.
 
+🔗Live Preview - https://campus-circle-ruby.vercel.app/
 ---
 
 ## ✨ Features
