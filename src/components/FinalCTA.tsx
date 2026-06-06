@@ -30,7 +30,7 @@ export default function FinalCTA() {
                 onClick={() => window.dispatchEvent(new CustomEvent("open-signup-modal"))}
                 className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(124,58,237,0.25)] transition-all duration-200 hover:bg-[var(--primary-hover)] hover:shadow-[0_0_30px_rgba(124,58,237,0.55)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
-                Join Your College
+                Join
               </button>
               <button
                 onClick={() => window.dispatchEvent(new CustomEvent("open-login-modal"))}
