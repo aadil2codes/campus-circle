@@ -601,7 +601,7 @@ export default function AuthModal() {
             {/* Header section */}
             <div className="text-center mb-6">
               <div className="inline-flex items-center gap-2.5 mx-auto">
-                <LogoIcon className="text-white" size={24} />
+                <LogoIcon className="text-white" size={14} />
                 <span className="font-heading text-lg font-bold tracking-tight text-white select-none">
                   Campus<span className="text-blue-500 font-semibold">Circle</span>
                 </span>

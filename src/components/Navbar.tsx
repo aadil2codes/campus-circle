@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo on Left */}
           <div className="flex items-center gap-2.5">
-            <LogoIcon className="text-[var(--text)]" size={28} />
+            <LogoIcon className="text-[var(--text)]" size={16} />
             <span className="font-heading text-lg font-bold tracking-tight text-[var(--text)] hover:opacity-90 transition-opacity select-none">
               Campus<span className="text-[var(--primary)] font-semibold">Circle</span>
             </span>
@@ -96,7 +96,7 @@ export default function Navbar() {
               onClick={triggerSignupModal}
               className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white shadow-[0_0_12px_rgba(124,58,237,0.25)] transition-all duration-200 hover:bg-[var(--primary-hover)] hover:shadow-[0_0_20px_rgba(124,58,237,0.45)] hover:scale-[1.02] active:scale-[0.98]"
             >
-              Join
+              Join Your College
             </button>
           </div>
 
@@ -186,7 +186,7 @@ export default function Navbar() {
                 }}
                 className="flex w-full items-center justify-center rounded-lg bg-[var(--primary)] py-3 text-base font-semibold text-white shadow-[0_0_12px_rgba(124,58,237,0.25)] transition-all duration-200 hover:bg-[var(--primary-hover)]"
               >
-                Join
+                Join Your College
               </button>
             </div>
           </div>

@@ -2958,7 +2958,7 @@ export default function DashboardPage() {
                   }}
                   className="flex items-center gap-2.5 flex-shrink-0 cursor-pointer group text-left"
                 >
-                  <LogoIcon className="text-white group-hover:scale-105 transition-transform" size={24} />
+                  <LogoIcon className="text-white group-hover:scale-105 transition-transform" size={14} />
                   <span className="font-heading text-base font-bold tracking-tight text-white select-none">
                     Campus<span className="text-blue-500 font-semibold">Circle</span>
                   </span>

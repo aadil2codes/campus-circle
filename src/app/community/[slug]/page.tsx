@@ -1270,7 +1270,7 @@ export default function CommunityPage({ params }: { params: Promise<{ slug: stri
         <div className="flex items-center gap-3">
           <Link href={`/dashboard${getMockAuthQueryParam()}`} className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <LogoIcon className="text-blue-400" size={20} />
+              <LogoIcon className="text-blue-400" size={13} />
             </div>
             <span className="text-sm font-heading font-black tracking-tight text-white uppercase group-hover:text-blue-400 transition-colors">
               CampusCircle
@@ -1330,7 +1330,7 @@ export default function CommunityPage({ params }: { params: Promise<{ slug: stri
               className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-white hover:bg-white/[0.04] transition-all"
             >
               <div className="w-5 h-5 rounded bg-brand/10 border border-brand/20 flex items-center justify-center">
-                <LogoIcon className="text-blue-400" size={12} />
+                <LogoIcon className="text-blue-400" size={8} />
               </div>
               Home Hub Feed
             </Link>

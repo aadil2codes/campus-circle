@@ -91,7 +91,7 @@ function Hero() {
               className="gap-4 bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)] shadow-lg shadow-[var(--primary)]/20"
               onClick={triggerSignupModal}
             >
-              Join <MoveRight className="w-4 h-4" />
+              Join Your College <MoveRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
