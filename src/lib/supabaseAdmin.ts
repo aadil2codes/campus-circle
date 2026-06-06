@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
-import { supabase as publicClient } from "./supabase";
+import { supabase as publicClient, isMockMode as isPublicMockMode, createChainableMock } from "./supabase";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
@@ -52,32 +52,27 @@ export const supabaseAdmin = !isServiceMockMode
       },
       // Delegate standard database requests to the public client to allow live updates
       from: (tableName: string) => {
-        if (publicClient && typeof publicClient.from === "function") {
+        if (publicClient && typeof publicClient.from === "function" && !isPublicMockMode) {
           return publicClient.from(tableName);
         }
-        return {
-          update: (data: any) => ({
-            eq: (col: string, val: any) => Promise.resolve({ error: null, data: null }),
-          }),
-          select: (query: string, options: any) => ({
-            eq: (col: string, val: any) => ({
-              order: (colOrder: string, opts: any) =>
-                Promise.resolve({
-                  data: [
-                    {
-                      id: "mock-1",
-                      full_name: "Arjun Mehta",
-                      title: "CTO",
-                      company_name: "Razorpay",
-                      linkedin_url: "https://linkedin.com",
-                      status: "pending",
-                    },
-                  ],
-                  error: null,
-                }),
-            }),
-          }),
-        };
+        if (tableName === "applications") {
+          return createChainableMock({
+            data: [
+              {
+                id: "mock-1",
+                full_name: "Arjun Mehta",
+                work_email: "arjun@circle-net.in",
+                title: "Founding Member Request",
+                company_name: "IIT Bombay",
+                company_size: "B.Tech CSE",
+                linkedin_url: "https://linkedin.com",
+                status: "pending",
+              },
+            ],
+            error: null,
+          });
+        }
+        return createChainableMock({ data: [], error: null });
       },
     } as any);
 

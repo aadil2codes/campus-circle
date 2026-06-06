@@ -14,34 +14,43 @@ const isValidUrl = (url: string) => {
   }
 };
 
-// Extremely premium build-resilient client configuration
-// Checks for valid URLs, falling back to a local mock client
-// if the environment variables are unconfigured. This prevents
-// build-time static generation crashes!
-export const supabase = isValidUrl(supabaseUrl) && supabaseAnonKey
+export const isMockMode = !isValidUrl(supabaseUrl) || !supabaseAnonKey;
+
+// Helper to create a chainable, thenable (Promise-like) Proxy mock
+export const createChainableMock = (resolvedValue: any) => {
+  const targetFn = () => {};
+  const handler: ProxyHandler<any> = {
+    get(target, prop) {
+      if (prop === "then") {
+        return (resolve: any) => resolve(resolvedValue);
+      }
+      if (typeof prop === "symbol") {
+        return undefined;
+      }
+      return () => new Proxy(targetFn, handler);
+    }
+  };
+  return new Proxy(targetFn, handler);
+};
+
+export const supabase = !isMockMode
   ? createClient(supabaseUrl, supabaseAnonKey)
   : ({
-      from: (tableName: string) => ({
-        insert: async (data: any) => {
-          console.warn(`Supabase Mock: Inserting into '${tableName}'`, data);
-          await new Promise((resolve) => setTimeout(resolve, 1200)); // Latency
-
-          // Auto-increment queue position in LocalStorage for dynamic UI demoing
-          if (typeof window !== "undefined") {
-            const stored = localStorage.getItem("techleaders_mock_queue");
-            const nextVal = stored ? parseInt(stored, 10) + 1 : 47;
-            localStorage.setItem("techleaders_mock_queue", nextVal.toString());
-          }
-          return { error: null, data: null };
-        },
-        select: async (query: string, options: any) => {
-          console.warn(`Supabase Mock: Selecting count from '${tableName}'`);
-          let currentQueue = 47;
-          if (typeof window !== "undefined") {
-            const stored = localStorage.getItem("techleaders_mock_queue");
-            currentQueue = stored ? parseInt(stored, 10) : 47;
-          }
-          return { count: currentQueue, error: null };
+      from: (tableName: string) => {
+        let currentQueue = 47;
+        if (typeof window !== "undefined") {
+          const stored = localStorage.getItem("techleaders_mock_queue");
+          currentQueue = stored ? parseInt(stored, 10) : 47;
         }
-      })
+        return createChainableMock({ data: [], error: null, count: currentQueue });
+      },
+      auth: {
+        getSession: async () => ({ data: { session: null }, error: null }),
+        signOut: async () => ({ error: null }),
+        signUp: async () => ({ data: { user: null }, error: null }),
+        signInWithPassword: async () => ({ data: { user: null }, error: null }),
+        resetPasswordForEmail: async () => ({ error: null }),
+        exchangeCodeForSession: async () => ({ data: { session: null }, error: null }),
+      }
     } as any);
+
