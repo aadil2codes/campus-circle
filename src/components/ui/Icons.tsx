@@ -6,7 +6,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 
 // Minimal geometric tech-style logo: overlapping clean vector shapes
 export const LogoIcon: React.FC<IconProps> = ({ size = 28, className, style, ...props }) => {
-  const displaySize = Math.round(size * 1.5);
+  const displaySize = Math.round(size * 2.0);
   return (
     <img
       src="/logo.png"
