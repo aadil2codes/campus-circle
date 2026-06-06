@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "CampusCircle | Your College's Private Digital Community",
   description: "Connect with students, seniors, and alumni from your college campus. Share notes, internships, placement updates, hackathons, and hold discussions in a verified environment.",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/logo.png",
   },
 };
 
