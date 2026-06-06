@@ -1273,7 +1273,7 @@ export default function CommunityPage({ params }: { params: Promise<{ slug: stri
               <LogoIcon className="text-blue-400" size={13} />
             </div>
             <span className="text-sm font-heading font-black tracking-tight text-white uppercase group-hover:text-blue-400 transition-colors">
-              CampusCircle
+              CircleNet
             </span>
           </Link>
           <span className="text-slate-700 text-sm select-none">/</span>

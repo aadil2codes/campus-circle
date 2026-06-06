@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5">
               <LogoIcon className="text-[var(--text)]" size={24} />
               <span className="font-heading text-base font-bold tracking-tight text-[var(--text)] select-none">
-                Campus<span className="text-[var(--primary)] font-semibold">Circle</span>
+                Circle<span className="text-[var(--primary)] font-semibold">Net</span>
               </span>
             </div>
             <p className="text-xs md:text-sm text-[var(--text-muted)] leading-relaxed max-w-sm">
@@ -56,7 +56,7 @@ export default function Footer() {
               <h4 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)]">Contact</h4>
               <ul className="space-y-2 text-xs">
                 <li><a href="#apply" className="hover:text-[var(--text)] transition-colors">Join</a></li>
-                <li><a href="mailto:support@campuscircle.in" className="hover:text-[var(--text)] transition-colors">Support</a></li>
+                <li><a href="mailto:support@circlenet.in" className="hover:text-[var(--text)] transition-colors">Support</a></li>
               </ul>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Footer() {
         {/* Lower Section: Copyright and Legal */}
         <div className="pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-[var(--text-muted)]">
-            © 2026 CampusCircle. Built for college communities. All rights reserved.
+            © 2026 CircleNet. Built for college communities. All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-[11px] font-medium text-[var(--text-muted)]">
             <a href="#privacy" className="hover:text-[var(--text)] transition-colors">Privacy Policy</a>

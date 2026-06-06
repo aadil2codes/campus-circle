@@ -10,7 +10,7 @@ export const LogoIcon: React.FC<IconProps> = ({ size = 28, className, style, ...
   return (
     <img
       src="/logo.png"
-      alt="CampusCircle Logo"
+      alt="CircleNet Logo"
       width={displaySize}
       height={displaySize}
       className={className}

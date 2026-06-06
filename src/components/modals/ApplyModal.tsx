@@ -264,7 +264,7 @@ export default function ApplyModal() {
   const handleShareLinkedIn = () => {
     if (typeof window !== "undefined") {
       const text = encodeURIComponent(
-        "I just joined CampusCircle, the private digital community for my college campus! Join your college circles here: " + window.location.origin
+        "I just joined CircleNet, the private digital community for my college campus! Join your college circles here: " + window.location.origin
       );
       window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.origin}&summary=${text}`, "_blank");
     }

@@ -2960,7 +2960,7 @@ export default function DashboardPage() {
                 >
                   <LogoIcon className="text-white group-hover:scale-105 transition-transform" size={14} />
                   <span className="font-heading text-base font-bold tracking-tight text-white select-none">
-                    Campus<span className="text-blue-500 font-semibold">Circle</span>
+                    Circle<span className="text-blue-500 font-semibold">Net</span>
                   </span>
                 </button>
 
@@ -4143,7 +4143,7 @@ export default function DashboardPage() {
                         <div className="space-y-3 max-w-md mx-auto">
                           <h3 className="text-lg font-bold font-heading text-white tracking-tight">No communities exist yet</h3>
                           <p className="text-xs text-slate-400 leading-relaxed font-body">
-                            CampusCircle grows organically through students. Be the trendsetter on your campus—click the <strong>Create Community</strong> button above to launch the very first circle!
+                            CircleNet grows organically through students. Be the trendsetter on your campus—click the <strong>Create Community</strong> button above to launch the very first circle!
                           </p>
                         </div>
                       </div>

@@ -35,7 +35,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5">
             <LogoIcon className="text-[var(--text)]" size={16} />
             <span className="font-heading text-lg font-bold tracking-tight text-[var(--text)] hover:opacity-90 transition-opacity select-none">
-              Campus<span className="text-[var(--primary)] font-semibold">Circle</span>
+              Circle<span className="text-[var(--primary)] font-semibold">Net</span>
             </span>
           </div>
 

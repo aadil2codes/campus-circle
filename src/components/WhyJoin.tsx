@@ -131,7 +131,7 @@ export default function WhyJoin() {
         {/* Centered Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-normal text-[var(--text)] font-heading">
-            Why students join CampusCircle
+            Why students join CircleNet
           </h2>
           <p className="mt-4 text-base md:text-lg text-[var(--text-muted)] font-body leading-relaxed">
             A secure, private space where verified peers share academic resources, seek career mentorship, and collaborate.

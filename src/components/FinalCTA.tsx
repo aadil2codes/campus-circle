@@ -21,7 +21,7 @@ export default function FinalCTA() {
 
             {/* Subheadline */}
             <p className="mt-6 text-sm sm:text-base md:text-lg text-[var(--text-muted)] font-body leading-relaxed max-w-2xl mx-auto">
-              Connect with peers, collaborate on resources, prepare for upcoming placement drives, and get direct senior mentorship on CampusCircle.
+              Connect with peers, collaborate on resources, prepare for upcoming placement drives, and get direct senior mentorship on CircleNet.
             </p>
 
             {/* CTA Buttons */}

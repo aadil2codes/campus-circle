@@ -1,4 +1,4 @@
--- SQL Schema for CampusCircle Posts and Comments Tables
+-- SQL Schema for CircleNet Posts and Comments Tables
 -- Run this in your Supabase SQL Editor (https://supabase.com) to initialize!
 
 -- 1. Create the Posts Table linking to auth.users securely

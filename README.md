@@ -1,12 +1,12 @@
-# 🎓 CampusCircle
+# 🎓 CircleNet
 
 > 🌍 Connecting Students Beyond Campus
 
-CampusCircle is a student networking platform designed to help college students connect, collaborate, and grow with peers from different institutions across India.
+CircleNet is a student networking platform designed to help college students connect, collaborate, and grow with peers from different institutions across India.
 
-Whether you're looking for 🤝 project teammates, 🚀 hackathon partners, 💼 placement guidance, 📚 study resources, or 🎯 career opportunities, CampusCircle brings everything together in one place.
+Whether you're looking for 🤝 project teammates, 🚀 hackathon partners, 💼 placement guidance, 📚 study resources, or 🎯 career opportunities, CircleNet brings everything together in one place.
 
-🔗Live Preview - https://campus-circle-ruby.vercel.app/
+🔗Live Preview - https://circle-net-ruby.vercel.app/
 ---
 
 ## ✨ Features
@@ -75,7 +75,7 @@ Whether you're looking for 🤝 project teammates, 🚀 hackathon partners, 💼
 
 ## 🎯 Vision
 
-CampusCircle is built to become a nationwide student network where students can:
+CircleNet is built to become a nationwide student network where students can:
 
 - 🚀 Build hackathon teams
 - 💻 Collaborate on projects
@@ -96,13 +96,13 @@ The goal is simple:
 Clone the repository:
 
 ```bash
-git clone https://github.com/aadil2codes/campus-circle.git
+git clone https://github.com/aadil2codes/circle-net.git
 ```
 
 Move into the project:
 
 ```bash
-cd campus-circle
+cd circle-net
 ```
 
 Install dependencies:
@@ -131,4 +131,4 @@ npm run dev
 
 ---
 
-**CampusCircle — Connect • Collaborate • Grow 🌍**
+**CircleNet — Connect • Collaborate • Grow 🌍**

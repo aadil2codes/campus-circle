@@ -1,4 +1,4 @@
--- SQL Schema for Reddit-Style College Social Network (CampusCircle)
+-- SQL Schema for Reddit-Style College Social Network (CircleNet)
 -- Run this in your Supabase SQL Editor (https://supabase.com) to initialize!
 
 -- 1. Drop old tables if they exist with CASCADE to guarantee a clean, unified migration

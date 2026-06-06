@@ -51,14 +51,14 @@ export async function POST(req: Request) {
     // 3. Send welcome email via Nodemailer SMTP or Mock
     const { messageId } = await sendMail({
       to: email,
-      subject: "Welcome to CampusCircle",
-      fromName: "CampusCircle",
+      subject: "Welcome to CircleNet",
+      fromName: "CircleNet",
       html: `
         <!DOCTYPE html>
         <html>
         <head>
           <meta charset="utf-8">
-          <title>Welcome to CampusCircle</title>
+          <title>Welcome to CircleNet</title>
         </head>
         <body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8fafc; padding: 40px 15px;">
@@ -68,7 +68,7 @@ export async function POST(req: Request) {
                   <tr>
                     <td align="left">
                       <span style="display: inline-block; padding: 4px 10px; font-size: 10px; font-weight: bold; color: #2563eb; background-color: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 100px; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 20px; select-none;">
-                        Welcome to CampusCircle
+                        Welcome to CircleNet
                       </span>
                       
                       <h1 style="margin: 0; font-size: 24px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; line-height: 1.2; margin-bottom: 20px;">
@@ -76,11 +76,11 @@ export async function POST(req: Request) {
                       </h1>
                       
                       <p style="font-size: 15px; color: #334155; line-height: 1.6; font-weight: 600; margin-bottom: 16px;">
-                        Your account is now active and you're ready to explore CampusCircle.
+                        Your account is now active and you're ready to explore CircleNet.
                       </p>
                       
                       <p style="font-size: 15px; color: #475569; line-height: 1.6; margin-bottom: 25px;">
-                        CampusCircle is a student network designed to help you connect with students from colleges across India, discover communities that match your interests, and participate in meaningful discussions about academics, placements, projects, internships, startups, technology, and much more.
+                        CircleNet is a student network designed to help you connect with students from colleges across India, discover communities that match your interests, and participate in meaningful discussions about academics, placements, projects, internships, startups, technology, and much more.
                       </p>
  
                       <!-- CTA Button -->
@@ -88,14 +88,14 @@ export async function POST(req: Request) {
                         <tr>
                           <td align="center" style="padding-bottom: 25px;">
                             <a href="${magicLink}" target="_blank" style="display: inline-block; background-color: #185FA5; color: #ffffff; font-size: 14px; font-weight: bold; text-decoration: none; padding: 14px 28px; border-radius: 8px; box-shadow: 0 4px 12px rgba(24, 95, 165, 0.2); border: 1px solid rgba(255,255,255,0.08);">
-                              Enter Your Campus Circle &rarr;
+                              Enter Your Circle Net &rarr;
                             </a>
                           </td>
                         </tr>
                       </table>
-
+ 
                       <p style="font-size: 15px; color: #334155; line-height: 1.5; margin-top: 20px; font-weight: 600; margin-bottom: 0;">
-                        The CampusCircle Team
+                        The CircleNet Team
                       </p>
  
                       <p style="font-size: 11px; color: #94a3b8; line-height: 1.5; margin-top: 25px; border-top: 1px solid #e2e8f0; padding-top: 20px;">
@@ -110,7 +110,7 @@ export async function POST(req: Request) {
         </body>
         </html>
       `,
-      text: `Welcome to CampusCircle\n\nHi ${name},\n\nYour account is now active and you're ready to explore CampusCircle.\n\nCampusCircle is a student network designed to help you connect with students from colleges across India, discover communities that match your interests, and participate in meaningful discussions about academics, placements, projects, internships, startups, technology, and much more.\n\nClick below to access your account:\n${magicLink}\n\nThe CampusCircle Team`,
+      text: `Welcome to CircleNet\n\nHi ${name},\n\nYour account is now active and you're ready to explore CircleNet.\n\nCircleNet is a student network designed to help you connect with students from colleges across India, discover communities that match your interests, and participate in meaningful discussions about academics, placements, projects, internships, startups, technology, and much more.\n\nClick below to access your account:\n${magicLink}\n\nThe CircleNet Team`,
     });
 
     console.log("Onboarding welcome email successfully dispatched to approved member!");

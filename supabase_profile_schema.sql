@@ -1,4 +1,4 @@
--- SQL Schema for CampusCircle Profiles Table
+-- SQL Schema for CircleNet Profiles Table
 -- Run this in your Supabase SQL Editor (https://supabase.com) to initialize the profile tables!
 
 -- 1. Create the Profiles Table linking to auth.users safely

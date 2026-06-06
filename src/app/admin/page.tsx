@@ -192,7 +192,7 @@ export default function AdminPage() {
             <div className="flex items-center gap-2.5">
               <LogoIcon className="text-white" size={14} />
               <span className="font-heading text-base font-bold tracking-tight text-white">
-                Campus<span className="text-blue-500 font-semibold">Circle</span>
+                Circle<span className="text-blue-500 font-semibold">Net</span>
               </span>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-900 border border-white/[0.05] text-slate-400 font-bold select-none ml-2 tracking-wider uppercase">
                 Admin
@@ -232,7 +232,7 @@ export default function AdminPage() {
               </div>
 
               <h3 className="text-xl font-bold font-heading text-white tracking-tight">
-                CampusCircle Administration
+                CircleNet Administration
               </h3>
               <p className="mt-2 text-xs text-slate-400 leading-normal max-w-[280px] mx-auto">
                 Authorized entry required. Please submit your secure lockout key.

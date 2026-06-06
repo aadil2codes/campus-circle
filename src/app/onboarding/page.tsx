@@ -502,7 +502,7 @@ export default function OnboardingPage() {
                   </div>
 
                   <h2 className="text-3xl font-extrabold font-heading text-white tracking-tight leading-tight">
-                    Welcome to CampusCircle
+                    Welcome to CircleNet
                   </h2>
                   <p className="mt-4 text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm mx-auto">
                     Your email is verified! Now let's set up your custom identity inside your college campus network. It takes less than two minutes.
