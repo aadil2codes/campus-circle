@@ -5,16 +5,20 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 // Minimal geometric tech-style logo: overlapping clean vector shapes
-export const LogoIcon: React.FC<IconProps> = ({ size = 28, className, style, ...props }) => (
-  <img
-    src="/logo.png"
-    alt="CampusCircle Logo"
-    width={size}
-    height={size}
-    className={className}
-    style={{ objectFit: "contain", ...style }}
-  />
-);
+export const LogoIcon: React.FC<IconProps> = ({ size = 28, className, style, ...props }) => {
+  const displaySize = Math.round(size * 1.5);
+  return (
+    <img
+      src="/logo.png"
+      alt="CampusCircle Logo"
+      width={displaySize}
+      height={displaySize}
+      className={className}
+      style={{ objectFit: "contain", ...style }}
+    />
+  );
+};
+
 
 
 // High-fidelity verification checkmark badge (double-ring look)
