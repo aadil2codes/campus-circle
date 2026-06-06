@@ -3680,7 +3680,7 @@ export default function DashboardPage() {
                             disabled={postingLoader || imageCompressing}
                             className="rounded-xl bg-brand px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-brand-hover hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
                           >
-                            {postingLoader ? "Publishing..." : "Sign Up & Post"}
+                            {postingLoader ? "Publishing..." : "Post"}
                           </button>
                         </div>
                       </motion.form>
@@ -4427,7 +4427,7 @@ export default function DashboardPage() {
                           disabled={postingLoader || imageCompressing}
                           className="rounded-xl bg-brand px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-brand-hover hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
                         >
-                          {postingLoader ? "Publishing..." : "Sign Up & Post"}
+                          {postingLoader ? "Publishing..." : "Post"}
                         </button>
                       </div>
 
