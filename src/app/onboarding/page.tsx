@@ -42,6 +42,20 @@ export default function OnboardingPage() {
 
   // STEP 4: DP Upload (Recommended - Skippable)
   const [avatarUrl, setAvatarUrl] = useState("");
+
+  useEffect(() => {
+    const maleAvatars = [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200&h=200",
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=200&h=200",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200",
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200&h=200"
+    ];
+    const randomAvatar = maleAvatars[Math.floor(Math.random() * maleAvatars.length)];
+    setAvatarUrl(randomAvatar);
+  }, []);
+
   const [imageLoading, setImageLoading] = useState(false);
 
   // STEP 5: Interests & Socials (Optional - Skippable)
